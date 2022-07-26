@@ -26,12 +26,13 @@ namespace BasicClasses
     public bool isAdamantine;
     public int Quality;
 
-    static int WeaponCount;
+    private static int _WeaponCount;
+    public int WeaponCount => _WeaponCount;
 
     //Initiates the class
     static Weapon()
     {
-        WeaponCount = 0;
+        _WeaponCount = 0;
     }
 
     //Standard constructer
@@ -39,7 +40,7 @@ namespace BasicClasses
     //UNFINISHED
     public Weapon (string name)
     {
-        WeaponCount++;
+        _WeaponCount++;
         Name = name;
         string dmg = "";
         
