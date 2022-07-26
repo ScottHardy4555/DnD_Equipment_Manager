@@ -444,7 +444,7 @@ namespace BasicClasses
         }
         catch (System.Exception)
         {
-            Console.WriteLine("ERROR: Attempted to convert impropper string in Weapon.getDiceType, returning default value of 0\nFailed: {num}");
+            Console.WriteLine("ERROR: Attempted to convert impropper string in Weapon.getDiceType, returning default value of 0\nFailed: {num}, Idiot");
             return 0;
         }
     }
