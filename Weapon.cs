@@ -429,7 +429,7 @@ namespace BasicClasses
         }
         catch (System.Exception)
         {
-            Console.WriteLine($"ERROR: Attempted to convert impropper string in Weapon.getDiceNum, returning default value of 0\nFailed: {num}");
+            Console.WriteLine($"ERROR: This is a bad error. Oh no, oh no. Please help us all.");
             return 0;
         }
     }
