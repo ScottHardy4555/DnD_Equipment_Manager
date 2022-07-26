@@ -429,7 +429,7 @@ namespace BasicClasses
         }
         catch (System.Exception)
         {
-            Console.WriteLine($"ERROR: This is a bad error. Oh no, oh no. Please help us all.");
+            Console.WriteLine($"ERROR: This is a bad error. Oh no, oh no. Please help us all. IM IGNORING YOU SCOTT");
             return 0;
         }
     }
