@@ -2,11 +2,11 @@ using System;
 
 /*
 TO DO:
-    Make sure all properties/field are initiated propperly
+    Make sure all properties/field are initiated properly
     Finish base constructor
     Create a constructor for a manually created weapon
     Create a method that upgrades the quality of the weapon
-    Create methods that give the weapon mythril and adamantine properites
+    Create methods that give the weapon mythril and adamantine properties
 */
 
 
@@ -15,7 +15,7 @@ namespace BasicClasses
 {
   class Weapon
   {
-    //Properites
+    //Properties
     public bool isRanged; //made
     public int LongRange; //made
     public int ShortRange; //made
@@ -26,7 +26,7 @@ namespace BasicClasses
     public bool isAdamantine;
     public int Quality;
 
-    private static int WeaponCount;
+    static int WeaponCount;
 
     //Initiates the class
     static Weapon()
@@ -34,8 +34,8 @@ namespace BasicClasses
         WeaponCount = 0;
     }
 
-    //Standard constructer
-    //Takes a given name and automatically fills out a pre-determined Weapon from the PHB
+    //Standard constructor
+    //Takes a given name and automatically fills out a pre-determined Weapon from the PHP
     //UNFINISHED
     public Weapon (string name)
     {
@@ -43,7 +43,7 @@ namespace BasicClasses
         Name = name;
         string dmg = "";
         
-        //Inititates the weapon based on the name given
+        //Initiates the weapon based on the name given
         //TO DO: double check this works
         switch (name)
         {
@@ -52,7 +52,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Bludgeoning";
                 Weight = 2;
-                Properties = {"Light"};
+                string[] Properties = {"Light"};
                 isSimple = true;
                 break;
             case "Dagger":
@@ -60,7 +60,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Piercing";
                 Weight = 1;
-                Properties = {"Finesse", "Light", "Thrown", "Range: 20/60"};
+                string[] Properties = {"Finesse", "Light", "Thrown", "Range: 20/60"};
                 isSimple = true;
                 break;
             case "Greatclub":
@@ -68,7 +68,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Bludgeoning";
                 Weight = 10;
-                Properties = {"Two-handed"};
+                string[] Properties = {"Two-handed"};
                 isSimple = true;
                 break;
             case "Handaxe":
@@ -76,7 +76,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Slashing";
                 Weight = 2;
-                Properties = {"Light", "Thrown", "Range 20/60"};
+                string[] Properties = {"Light", "Thrown", "Range 20/60"};
                 isSimple = true;
                 break;
             case "Javelin":
@@ -84,7 +84,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Piercing";
                 Weight = 2;
-                Properties = {"Thrown", "Range 30/120"};
+                string[] Properties = {"Thrown", "Range 30/120"};
                 isSimple = true;
                 break;
             case "Light Hammer":
@@ -92,7 +92,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Bludgeoning";
                 Weight = 2;
-                Properties = {"Light", "Thrown", "Range 20/60"};
+                string[] Properties = {"Light", "Thrown", "Range 20/60"};
                 isSimple = true;
                 break;
             case "Mace":
@@ -100,7 +100,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Bludgeoning";
                 Weight = 4;
-                Properties = {"-"};
+                string[] Properties = {"-"};
                 isSimple = true;
                 break;
             case "Quarterstaff":
@@ -108,7 +108,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Bludgeoning";
                 Weight = 4;
-                Properties = {"Versatile", "1d8"};
+                string[] Properties = {"Versatile", "1d8"};
                 isSimple = true;
                 break;
             case "Sickle":
@@ -116,7 +116,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Slashing";
                 Weight = 2;
-                Properties = {"Light"};
+                string[] Properties = {"Light"};
                 isSimple = true;
                 break;
             case "Light Crossbow":
@@ -124,7 +124,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Piercing";
                 Weight = 5;
-                Properties = {"Ammunition", "Range 80/320", "Loading", "Two-Handed"};
+                string[] Properties = {"Ammunition", "Range 80/320", "Loading", "Two-Handed"};
                 isSimple = true;
                 break;
             case "Dart":
@@ -132,7 +132,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Piercing";
                 Weight = 0;
-                Properties = {"Finesse", "Thrown", "Range 20/60"};
+                string[] Properties = {"Finesse", "Thrown", "Range 20/60"};
                 isSimple = true;
                 break;
             case "Shortbow":
@@ -140,7 +140,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Piercing";
                 Weight = 2;
-                Properties = {"Ammunition", "Range 80/320", "Two-Handed"};
+                string[] Properties = {"Ammunition", "Range 80/320", "Two-Handed"};
                 isSimple = true;
                 break;
             case "Sling":
@@ -148,7 +148,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Bludgeoning";
                 Weight = 0;
-                Properties = {"Ammunition", "Range 30/120"};
+                string[] Properties = {"Ammunition", "Range 30/120"};
                 isSimple = true;
                 break;
             case "Battleaxe":
@@ -156,7 +156,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Slashing";
                 Weight = 4;
-                Properties = {"Versatile", "1d10"};
+                string[] Properties = {"Versatile", "1d10"};
                 isSimple = false;
                 break;
             case "Flail":
@@ -164,7 +164,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Bludgeoning";
                 Weight = 2;
-                Properties = {"-"};
+                string[] Properties = {"-"};
                 isSimple = false;
                 break;
             case "Glaive":
@@ -172,7 +172,7 @@ namespace BasicClasses
                 dmg = "1d10";
                 Dmg_Type = "Slashing";
                 Weight = 6;
-                Properties = {"Heavy", "Reach", "Two-Handed"};
+                string[] Properties = {"Heavy", "Reach", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Greataxe":
@@ -180,7 +180,7 @@ namespace BasicClasses
                 dmg = "1d12";
                 Dmg_Type = "Slashing";
                 Weight = 7;
-                Properties = {"Heavy", "Two-Handed"};
+                string[] Properties = {"Heavy", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Greatsword":
@@ -188,7 +188,7 @@ namespace BasicClasses
                 dmg = "2d6";
                 Dmg_Type = "Slashing";
                 Weight = 6;
-                Properties = {"Heavy", "Two-Handed"};
+                string[] Properties = {"Heavy", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Halberd":
@@ -196,7 +196,7 @@ namespace BasicClasses
                 dmg = "1d10";
                 Dmg_Type = "Slashing";
                 Weight = 6;
-                Properties = {"Reach", "Reach", "Two-Handed"};
+                string[] Properties = {"Reach", "Reach", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Lance":
@@ -204,7 +204,7 @@ namespace BasicClasses
                 dmg = "1d12";
                 Dmg_Type = "Piercing";
                 Weight = 6;
-                Properties = {"Reach", "Special"};
+                string[] Properties = {"Reach", "Special"};
                 isSimple = false;
                 break;
             case "Longsword":
@@ -212,7 +212,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Slashing";
                 Weight = 3;
-                Properties = {"Versatile", "1d10"};
+                string[] Properties = {"Versatile", "1d10"};
                 isSimple = false;
                 break;
             case "Maul":
@@ -220,7 +220,7 @@ namespace BasicClasses
                 dmg = "2d6";
                 Dmg_Type = "Bludgeoning";
                 Weight = 10;
-                Properties = {"Heavy", "Two-Handed"};
+                string[] Properties = {"Heavy", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Morningstar":
@@ -228,7 +228,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Piercing";
                 Weight = 4;
-                Properties = {"-"};
+                string[] Properties = {"-"};
                 isSimple = false;
                 break;
             case "Pike":
@@ -236,7 +236,7 @@ namespace BasicClasses
                 dmg = "1d10";
                 Dmg_Type = "Piercing";
                 Weight = 18;
-                Properties = {"Heavy", "Reach", "Two-Handed"};
+                string[] Properties = {"Heavy", "Reach", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Rapier":
@@ -244,7 +244,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Piercing";
                 Weight = 2;
-                Properties = {"Finesse"};
+                string[] Properties = {"Finesse"};
                 isSimple = false;
                 break;
             case "Scimitar":
@@ -252,7 +252,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Slashing";
                 Weight = 3;
-                Properties = {"Finesse", "Light"};
+                string[] Properties = {"Finesse", "Light"};
                 isSimple = false;
                 break;
             case "Shortsword":
@@ -260,7 +260,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Piercing";
                 Weight = 2;
-                Properties = {"Finesse", "Light"};
+                string[] Properties = {"Finesse", "Light"};
                 isSimple = false;
                 break;
             case "Trident":
@@ -268,7 +268,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Piercing";
                 Weight = 4;
-                Properties = {"Thrown", "Range 20/60", "Versatile", "1d8"};
+                string[] Properties = {"Thrown", "Range 20/60", "Versatile", "1d8"};
                 isSimple = false;
                 break;
             case "War Pick":
@@ -276,7 +276,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Piercing";
                 Weight = 2;
-                Properties = {"-"};
+                string[] Properties = {"-"};
                 isSimple = false;
                 break;
             case "Warhammer":
@@ -284,7 +284,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Bludgeoning";
                 Weight = 2;
-                Properties = {"Versatile", "1d10"};
+                string[] Properties = {"Versatile", "1d10"};
                 isSimple = false;
                 break;
             case "Whip":
@@ -292,7 +292,7 @@ namespace BasicClasses
                 dmg = "1d4";
                 Dmg_Type = "Slashing";
                 Weight = 3;
-                Properties = {"Finesse", "Light"};
+                string[] Properties = {"Finesse", "Light"};
                 isSimple = false;
                 break;
             case "Blowgun":
@@ -300,7 +300,7 @@ namespace BasicClasses
                 dmg = "1d1";
                 Dmg_Type = "Piercing";
                 Weight = 1;
-                Properties = {"Ammunition", "Range 25/100", "Loading"};
+                string[] Properties = {"Ammunition", "Range 25/100", "Loading"};
                 isSimple = false;
                 break;
             case "Hand Crossbow":
@@ -308,7 +308,7 @@ namespace BasicClasses
                 dmg = "1d6";
                 Dmg_Type = "Piercing";
                 Weight = 3;
-                Properties = {"Ammunition", "Range 30/120", "Light", "Loading"};
+                string[] Properties = {"Ammunition", "Range 30/120", "Light", "Loading"};
                 isSimple = false;
                 break;
             case "Heavy Crossbow":
@@ -316,7 +316,7 @@ namespace BasicClasses
                 dmg = "1d10";
                 Dmg_Type = "Piercing";
                 Weight = 18;
-                Properties = {"Ammunition", "Range 100/400", "Heavy", "Loading", "Two-Handed"};
+                string[] Properties = {"Ammunition", "Range 100/400", "Heavy", "Loading", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Longbow":
@@ -324,7 +324,7 @@ namespace BasicClasses
                 dmg = "1d8";
                 Dmg_Type = "Piercing";
                 Weight = 2;
-                Properties = {"Ammunition", "Range 150/600", "Heavy", "Two-Handed"};
+                string[] Properties = {"Ammunition", "Range 150/600", "Heavy", "Two-Handed"};
                 isSimple = false;
                 break;
             case "Net":
@@ -332,7 +332,7 @@ namespace BasicClasses
                 dmg = "0d1";
                 Dmg_Type = "Bludgeoning";
                 Weight = 3;
-                Properties = {"Special", "Thrown", "Range 5/15"};
+                string[] Properties = {"Special", "Thrown", "Range 5/15"};
                 isSimple = false;
                 break;
             default:
@@ -340,9 +340,9 @@ namespace BasicClasses
                 dmg = "0d1";
                 Dmg_Type = "Bludgeoning";
                 Weight = 0;
-                Properties = {"-"};
+                string[] Properties = {"-"};
                 isSimple = true;
-                Console.WriteLine("ERROR: UNKNOWN WEAPON CREATED")
+                Console.WriteLine("ERROR: UNKNOWN WEAPON CREATED");
                 break;
         }
 
@@ -365,8 +365,8 @@ namespace BasicClasses
 
             r2 = r1.Substring(r1.IndexOf(" "));
 
-            ShortRange = r2.Substring(0, r2.IndexOf("/"))
-            LongRange = r2.Substring(r2.IndexOf("/"))
+            ShortRange = r2.Substring(0, r2.IndexOf("/"));
+            LongRange = r2.Substring(r2.IndexOf("/"));
         }
         else { isRanged = false; LongRange = 0; ShortRange = 0; }
 
@@ -444,7 +444,7 @@ namespace BasicClasses
         }
         catch (System.Exception)
         {
-            Console.WriteLine("ERROR: Attempted to convert impropper string in Weapon.getDiceType, returning default value of 0\nFailed: {num}, Idiot");
+            Console.WriteLine("ERROR: Attempted to convert impropper string in Weapon.getDiceType, returning default value of 0\nFailed: {num}");
             return 0;
         }
     }
@@ -467,7 +467,8 @@ namespace BasicClasses
     //Adds a modifer and the quality of the weapon
     public int DoDamage ()
     {
-        Random randy = new Random(int mod);
+        int mod;
+        Random randy = new Random(mod);
         int total = 0;
         for (int x=0; x<Dice_Number; x++) { total += randy.Next(Dice_Type) + 1 + mod + this.quality; }
 
