@@ -11,7 +11,7 @@ TO DO:
 
 
 
-namespace EquipmentManager
+namespace BasicClasses
 {
   class Weapon
   {
@@ -365,8 +365,8 @@ namespace EquipmentManager
 
             r2 = r1.Substring(r1.IndexOf(" "));
 
-            ShortRange = r2.Substring(0, r2.IndexOf("/"));
-            LongRange = r2.Substring(r2.IndexOf("/"));
+            ShortRange = Convert.ToInt16(r2.Substring(0, r2.IndexOf("/")));
+            LongRange = Convert.ToInt16(r2.Substring(r2.IndexOf("/")));
         }
         else { isRanged = false; LongRange = 0; ShortRange = 0; }
 
@@ -387,10 +387,12 @@ namespace EquipmentManager
 
 
     //Fields
-    
+    public string Name { get; set; }
+    public double Cost { get; private set; }
     public int Dice_Number { get; private set; }
     public int Dice_Type { get; private set; }
     public string Dmg_Type { get; private set; }
+    public int Weight { get; private set; }
     public int Versatile_Dice_Number { get; private set; }
     public int Versatile_Dice_Type { get; private set; }
     public string[] Properties { get; private set; }

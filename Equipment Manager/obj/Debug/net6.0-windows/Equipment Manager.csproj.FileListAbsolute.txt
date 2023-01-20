@@ -1,0 +1,17 @@
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\bin\Debug\net6.0-windows\Equipment Manager.exe
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\bin\Debug\net6.0-windows\Equipment Manager.deps.json
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\bin\Debug\net6.0-windows\Equipment Manager.runtimeconfig.json
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\bin\Debug\net6.0-windows\Equipment Manager.dll
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\bin\Debug\net6.0-windows\Equipment Manager.pdb
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.csproj.AssemblyReference.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment_Manager.Form1.resources
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.csproj.GenerateResource.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.AssemblyInfoInputs.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.AssemblyInfo.cs
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.csproj.CoreCompileInputs.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.dll
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\refint\Equipment Manager.dll
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.pdb
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\Equipment Manager.genruntimeconfig.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\Equipment Manager\obj\Debug\net6.0-windows\ref\Equipment Manager.dll

@@ -1,0 +1,8 @@
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.csproj.AssemblyReference.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.frmAddItem.resources
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.Form1.resources
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.csproj.GenerateResource.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.AssemblyInfoInputs.cache
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.AssemblyInfo.cs
+C:\Users\soanh\Desktop\Programing\Programs\Projects\DnD_Equipment_Manager\EquipmentManager\obj\Debug\net6.0-windows\EquipmentManager.csproj.CoreCompileInputs.cache
