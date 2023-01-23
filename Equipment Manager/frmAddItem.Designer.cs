@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lstItemTypeSelector = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // lstItemTypeSelector
+            // 
+            this.lstItemTypeSelector.FormattingEnabled = true;
+            this.lstItemTypeSelector.Items.AddRange(new object[] {
+            "Type...",
+            "Item",
+            "Weapon",
+            "Armor"});
+            this.lstItemTypeSelector.Location = new System.Drawing.Point(66, 41);
+            this.lstItemTypeSelector.Name = "lstItemTypeSelector";
+            this.lstItemTypeSelector.Size = new System.Drawing.Size(151, 28);
+            this.lstItemTypeSelector.TabIndex = 0;
+            // 
+            // frmAddItem
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstItemTypeSelector);
+            this.Name = "frmAddItem";
             this.Text = "frmAddItem";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private ComboBox lstItemTypeSelector;
     }
 }
